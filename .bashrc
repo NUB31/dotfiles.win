@@ -1,18 +1,21 @@
 # define aliases
 alias grep="grep --color"
 alias ls="ls --color"
+alias k="kubectl"
 alias ll="ls -la"
 alias pat="cat ~/.bak/PAT | clip"
-alias k="kubectl"
+alias gut="cleanbranches"
+alias config="nano ~/.bashrc"
+alias fucking="sudo"
+
+# define functions
+cleanbranches(){
+    git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}' ) ; do git branch -D $branch ; done
+}
 
 # init starship
 export STARSHIP_CONFIG=~/.config/startship.toml
+eval "$(starship init bash)"
 
-major="${BASH_VERSINFO[0]}"
-minor="${BASH_VERSINFO[1]}"
-
-if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
-    source <('/c/Program Files/starship/bin/starship.exe' init bash --print-full-init)
-else
-    source /dev/stdin <<<"$('/c/Program Files/starship/bin/starship.exe' init bash --print-full-init)"
-fi
+# use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
