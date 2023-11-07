@@ -1,4 +1,5 @@
 # define aliases
+alias grep="grep --color"
 alias ls="ls --color"
 alias ll="ls -la"
 alias pat="cat ~/.bak/PAT | clip"
