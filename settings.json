@@ -1,0 +1,100 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+shift+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+shift+v"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    }
+  ],
+  "confirmCloseAllTabs": false,
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{85302462-a741-432a-bb21-236a61567b45}",
+  "disableAnimations": true,
+  "experimental.detectURLs": true,
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "colorScheme": "xcad",
+      "font": {
+        "face": "JetBrainsMono Nerd Font Mono"
+      }
+    },
+    "list": [
+      {
+        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+        "guid": "{85302462-a741-432a-bb21-236a61567b45}",
+        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+        "name": "Bash",
+        "startingDirectory": "%USERPROFILE%"
+      },
+      {
+        "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+        "hidden": false,
+        "name": "Debian",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "PowerShell"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "CMD"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "name": "xcad",
+      "background": "#1A1A1A",
+      "black": "#121212",
+      "blue": "#2B4FFF",
+      "brightBlack": "#666666",
+      "brightBlue": "#5C78FF",
+      "brightCyan": "#5AC8FF",
+      "brightGreen": "#905AFF",
+      "brightPurple": "#5EA2FF",
+      "brightRed": "#BA5AFF",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#685AFF",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#28B9FF",
+      "foreground": "#F1F1F1",
+      "green": "#7129FF",
+      "purple": "#2883FF",
+      "red": "#A52AFF",
+      "selectionBackground": "#FFFFFF",
+      "white": "#F1F1F1",
+      "yellow": "#3D2AFF"
+    }
+  ],
+  "showTabsInTitlebar": true,
+  "tabSwitcherMode": "inOrder",
+  "themes": [],
+  "useAcrylicInTabRow": true
+}
