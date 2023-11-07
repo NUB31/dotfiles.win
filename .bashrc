@@ -1,7 +1,7 @@
 # define aliases
 alias ls="ls --color"
 alias ll="ls -la"
-alias pat="cat ~/.bak/PAT"
+alias pat="cat ~/.bak/PAT | clip"
 alias k="kubectl"
 
 # init starship
