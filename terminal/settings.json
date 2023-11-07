@@ -19,7 +19,11 @@
         "split": "auto",
         "splitMode": "duplicate"
       },
-      "keys": "alt+shift+d"
+      "keys": "ctrl+d"
+    },
+    {
+      "command": "closePane",
+      "keys": "ctrl+shift+d"
     }
   ],
   "confirmCloseAllTabs": false,
@@ -35,7 +39,12 @@
   ],
   "profiles": {
     "defaults": {
+      "backgroundImage": "%USERPROFILE%\\.config\\terminal\\dancefrog.gif",
+      "backgroundImageAlignment": "bottomRight",
+      "backgroundImageOpacity": 0.15,
+      "backgroundImageStretchMode": "none",
       "colorScheme": "xcad",
+      "experimental.retroTerminalEffect": false,
       "font": {
         "face": "JetBrainsMono Nerd Font Mono"
       }
@@ -71,6 +80,7 @@
   "schemes": [
     {
       "name": "xcad",
+      "selectionBackground": "#FFFFFF",
       "background": "#1A1A1A",
       "black": "#121212",
       "blue": "#2B4FFF",
@@ -88,7 +98,6 @@
       "green": "#7129FF",
       "purple": "#2883FF",
       "red": "#A52AFF",
-      "selectionBackground": "#FFFFFF",
       "white": "#F1F1F1",
       "yellow": "#3D2AFF"
     }
