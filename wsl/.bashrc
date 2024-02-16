@@ -13,7 +13,7 @@ cleanbranches(){
 }
 
 # init starship
-export STARSHIP_CONFIG=/mnt/c/Users/Oliver/.config/startship.toml
+export STARSHIP_CONFIG=/mnt/c/Users/Oliver/.config/starship.toml
 
 eval "$(starship init bash)"
 
