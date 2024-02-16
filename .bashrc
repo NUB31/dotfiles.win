@@ -14,7 +14,7 @@ cleanbranches(){
 }
 
 # init starship
-export STARSHIP_CONFIG=~/.config/startship.toml
+export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init bash)"
 
 # use bash-completion, if available
